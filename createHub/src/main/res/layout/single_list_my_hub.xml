@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/post_border_style"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/post_background_style"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/locationt"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_button"
+                android:focusable="false"
+                android:text="Map" />
+
+            <Button
+                android:id="@+id/add_event"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_button"
+                android:focusable="false"
+                android:text="+ E" />
+
+            <LinearLayout
+                android:id="@+id/box1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/hubname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:text="Hub Name: "
+                    android:textColor="#5d5d5d"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/builder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="2dip"
+                    android:text="title"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="4dip"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                
+               
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

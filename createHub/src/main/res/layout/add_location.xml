@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/top_layover"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_gradient"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/BlackText"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Create Event"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:id="@+id/bottom_layover"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/blue_gradient"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/loc"
+                style="@style/WhiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_button"
+                android:text="Add location" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <EditText
+         android:id="@+id/descripe"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/bottom_layover"
+         android:layout_alignLeft="@+id/evnt"
+         android:layout_marginBottom="47dp"
+         android:ems="10"
+         android:hint="give a description"
+         android:inputType="textMultiLine" />
+
+     <EditText
+         android:id="@+id/evnt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/descripe"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="55dp"
+         android:ems="10"
+         android:hint="event name"
+         android:inputType="textPersonName" />
+
+</RelativeLayout>
